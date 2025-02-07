@@ -1,0 +1,51 @@
+package com.example.qw;
+
+import static java.lang.StrictMath.PI;
+import static java.lang.StrictMath.pow;
+import static java.lang.StrictMath.*;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity4 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main4);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+
+    public void calc(View v){
+        TextView result = findViewById(R.id.result);
+
+        EditText xT = findViewById(R.id.xT);
+        EditText yT = findViewById(R.id.yT);
+        double x=Double.parseDouble(xT.getText().toString());
+        double y=Double.parseDouble(yT.getText().toString());
+        double a=x+y;
+        double b=pow(x,2)+pow(y,2);
+        double p=pow(a+b,2)+a*cos(a+b)+(a*sqrt(b))/(a+b);
+        result.setText(String.format("p=%.2f",p));
+
+    }
+    public void First(View v) {
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+
+}

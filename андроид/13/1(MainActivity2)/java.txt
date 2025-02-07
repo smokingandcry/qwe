@@ -1,0 +1,45 @@
+package com.example.qw;
+import static java.lang.StrictMath.*;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity2 extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main2);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+    public void calc(View v){
+        TextView result = findViewById(R.id.result);
+        EditText r1T = findViewById(R.id.r1T);
+        EditText r2T = findViewById(R.id.r2T);
+        double r1=Double.parseDouble(r1T.getText().toString());
+        double r2=Double.parseDouble(r2T.getText().toString());
+        double S1=PI*pow(r1,2);
+        double S2=PI*pow(r2,2);
+        double S3=S1-S2;
+        result.setText(String.format("S1=%.2f S2=%.2f S3=%.2f",S1,S2,S3));
+
+    }
+    public void Second(View v) {
+        Intent intent = new Intent(this, MainActivity3.class);
+        startActivity(intent);
+    }
+}

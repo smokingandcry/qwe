@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/zadanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Задание 3"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+
+    <EditText
+        android:id="@+id/xT"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="72dp"
+        android:hint="X="
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/zadanie" />
+
+    <EditText
+        android:id="@+id/aT"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:hint="A="
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/xT"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/yT"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="72dp"
+        android:hint="Y="
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/aT" />
+
+    <EditText
+        android:id="@+id/bT"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:hint="b="
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@id/yT"
+        app:layout_constraintTop_toTopOf="@id/xT" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ответ"
+        android:onClick="calc"
+        app:layout_constraintTop_toBottomOf="@id/yT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calc" />
+    <Button
+        android:id="@+id/task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="First"
+        android:text="Задание 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

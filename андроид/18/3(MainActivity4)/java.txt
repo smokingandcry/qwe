@@ -1,0 +1,52 @@
+package com.example.qw;
+
+import static java.lang.StrictMath.PI;
+import static java.lang.StrictMath.pow;
+import static java.lang.StrictMath.*;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity4 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main4);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+
+    public void calc(View qwerty){
+        TextView result = findViewById(R.id.result);
+        EditText vT = findViewById(R.id.vT);
+        EditText uT = findViewById(R.id.uT);
+        EditText t1T = findViewById(R.id.t1T);
+        EditText t2T = findViewById(R.id.t2T);
+
+        double v=Double.parseDouble(vT.getText().toString());
+        double u=Double.parseDouble(uT.getText().toString());
+        double t1=Double.parseDouble(t1T.getText().toString());
+        double t2=Double.parseDouble(t2T.getText().toString());
+        double S=t1*v+t2*(v-u);
+        result.setText(String.format("S=%.2f",S));
+
+    }
+    public void First(View v) {
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+}

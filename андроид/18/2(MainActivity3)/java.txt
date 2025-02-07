@@ -1,0 +1,50 @@
+package com.example.qw;
+
+import static java.lang.StrictMath.*;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity3 extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main3);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+    public void calc(View v){
+        TextView result = findViewById(R.id.result);
+        EditText aT = findViewById(R.id.aT);
+        EditText bT = findViewById(R.id.bT);
+        EditText cT = findViewById(R.id.cT);
+        double a=Double.parseDouble(aT.getText().toString());
+        double b=Double.parseDouble(bT.getText().toString());
+        double c=Double.parseDouble(cT.getText().toString());
+        double ac=abs(c-a);
+        double bc=abs(c-b);
+        double s=ac*bc;
+        result.setText("Произведение="+s);
+
+    }
+
+    public void Third(View q) {
+        Intent intent = new Intent(this, MainActivity4.class);
+        startActivity(intent);
+    }
+}
