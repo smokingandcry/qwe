@@ -1,0 +1,93 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Вес груза:");
+//        double a= in.nextDouble();
+//        int w = 100;
+//        double q = 20;
+//        double c=0;
+//        if (a<500) {
+//            c = q*0.8;
+//        } else if (a <=1000) {
+//            c = q;
+//        } else {
+//            c = q*1.5;
+//        }
+//        double b=c*w;
+//        System.out.printf("Cтоимость доставки %.2f", b);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x <2) {
+//            y1 =2-x;
+//        } else {
+//            y1 =a+3;
+//        }
+//
+//        if (x<a) {
+//            y2 = a-1;
+//        } else {
+//            y2 = a*x-1;
+//        }
+//        y = y1 + y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+
+        //3
+//        System.out.print("n=");
+//        int n = in.nextInt();
+//        double S = 1;
+//        int k = 1;
+//        do {
+//            if((k/2)%2==0){
+//                S=S*k/(k+1);
+//            }else{
+//                S=S*(k+3)/k;
+//            }
+//            k=k+2;
+//        } while (k <= n);
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        System.out.print("r = ");
+//        double r = in.nextDouble();
+//
+//        if(y>=pow(x,2)&&pow(x,2)+pow(y,2)<=pow(r,2)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+//        
+    }
+}
+
+
+
+
+
+
+
+

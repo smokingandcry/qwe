@@ -1,0 +1,74 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //1
+//        System.out.print("Количество потребленных кВт/час за месяц:");
+//        double a= in.nextDouble();
+//        System.out.print("Установлены ли в доме электрические плиты? (1-да, 2-нет): ");
+//        double b=in.nextDouble();
+//        double c;
+//        if (b==1) {
+//            c = 2.0;
+//        } else {
+//            c = 2.5;
+//        }
+//        double q = a * c;
+//
+//        System.out.printf("Сумма оплаты за месяц: %.2f руб.", q);
+
+
+        //2
+//                double X = 0;
+//                System.out.print("Введите a=");
+//                int a = in.nextInt();
+//                System.out.print("Введите b=");
+//                int b = in.nextInt();
+//                if (a > b) {
+//                    X = a*b+1;
+//                } else if (a == b) {
+//                    X =25;
+//                } else if (a < b) {
+//                    X = (a*1.0-5)/b;
+//                }
+//
+//                if (b == 0) {
+//                    System.out.println("Знаменатель в выражении (3) равен 0.");
+//                    return;
+//                }
+//                System.out.printf("X=%.2f",X);
+
+
+        //3
+//        System.out.print("n=");
+//        int n = in.nextInt();
+//
+//        double S = 0;
+//        double k = 0;
+//
+//        do {
+//            S =S+  (4 + 2 * k) / ((5 + 7 * k) + (7 + 7 * k));
+//            k=k+1;
+//        } while (k <= n);
+//
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        if ((x >= 0 && pow(x, 2) + pow(y, 2) <= 16) || (x >= 0 && y <= 0 && pow(x, 2) + pow(y, 2) <= 25)) {
+//            System.out.print("М принадлежит");
+//        } else {
+//            System.out.print("M не принадлежит");
+//        }
+
+        
+    }
+}
+

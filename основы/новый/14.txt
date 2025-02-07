@@ -1,0 +1,87 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Базовый тариф:");
+//        double a=in.nextDouble();
+//        System.out.print("Месяц:");
+//        int m= in.nextInt();
+//        double c=0;
+//        if (m == 1 || m == 2) {
+//            c = 0.4;
+//        } else if (m == 6 || m == 7 || m == 8) {
+//            c = 0.2;
+//        }
+//        double b=a*(1-c);
+//        System.out.printf("Cтоимость билета=%.2f", b);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x>a) {
+//            y1 =a+abs(x);
+//        } else {
+//            y1 =a-7;
+//        }
+//
+//        if (a>3) {
+//            y2 = a*3;
+//        } else {
+//            y2 = 11;
+//        }
+//        y = y1 - y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+        //3
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//
+//        double S = 1;
+//        int k = 1;
+//
+//        do {
+//            S =S*(X -(pow(2, k)-1))/(X-(pow(2, k) - 2));
+//            k=k+1;
+//        } while (k <=6);
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        System.out.print("r = ");
+//        double r = in.nextDouble();
+//
+//
+//        if(y>=r&&y>=pow(x,2)||y>=0&&pow(x,2)+pow(y,2)<=pow(r,2)&&y<=pow(x,2)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+
+

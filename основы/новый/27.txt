@@ -1,0 +1,84 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Базовая стоимость путёвки:");
+//        double a= in.nextDouble();
+//        System.out.print("Месяц ");
+//        double m = in.nextDouble();
+//
+//
+//        double c=0;
+//        if (m == 1 || m == 5 || m == 10) {
+//            c = 1.0;
+//        } else if (m == 6 || m == 7 || m == 8 || m == 9) {
+//            c = 1.2;
+//        } else {
+//            c = 0.8;
+//        }
+//        double b=a*c;
+//        System.out.printf("Стоимость путёвки %.2f", b);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x>a) {
+//            y1 =a+x;
+//        } else{
+//            y1 =2*a-x;
+//        }
+//
+//        if (a>10) {
+//            y2 = a*x;
+//        } else {
+//            y2 = x;
+//        }
+//        y = y1 + y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+        //3
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//        double S = 0;
+//
+//        for (int k = 1; k <= 7; k++) {
+//            S = S+cos(2*k-1);
+//        }
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        if((y>=1&&y<=7&&x>=-4&&x<=-1)||y<=7&&y>=4&&x>=-4&&x<=3){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+
+

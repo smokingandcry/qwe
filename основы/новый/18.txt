@@ -1,0 +1,87 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Количество этажей N=");
+//        int N=in.nextInt();
+//        System.out.print("Номер квартиры M=");
+//        int M=in.nextInt();
+//        int x=(M-1)/3+1;
+//        if(x%2==0){
+//            if(x==N){
+//                x=x-1;}
+//        }
+//        else x=x+1;
+//        System.out.printf("Лифт едет на %d этаж",x);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x>7) {
+//            y1 =15+x;
+//        } else  if(x<=-7){//спроси про это
+//            y1 =abs(a)+9;
+//        }
+//
+//        if (x>2) {
+//            y2 = 3;
+//        } else {
+//            y2 = abs(x)-5;
+//        }
+//        y = y1 / y2;
+//
+//        System.out.printf("y = %.2f", y);
+//
+
+        //3
+
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//
+//        double S = 0;
+//        for (int k = 1; k <= 15; k=k+2) {
+//            S = S + X*k*sin(k*X);
+//        }
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        System.out.print("r = ");
+//        double r = in.nextDouble();
+//
+//
+//        if(y<=r&&y>=pow(x,2)||y<=r&&pow(x,2)+pow(y,2)>=pow(r,2)&&x>=0&&y>0||y>=r&&y<=pow(x,2)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+//
+
+    }
+}
+
+
+
+
+
+
+
+

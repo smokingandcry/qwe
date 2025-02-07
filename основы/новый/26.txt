@@ -1,0 +1,84 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Cовокупный доход семьи :");
+//        double a= in.nextDouble();
+//        System.out.print("Количество человек в семье: ");
+//        int q = in.nextInt();
+//        System.out.print("Базовая ставка оплты  за детский сад: ");
+//        double w = in.nextDouble();
+//        double u=a/q;
+//
+//        double c=0;
+//        if (u<5000) {
+//            c = 50;
+//        } else if (u >= 5000 && u <= 7000) {
+//            c = 30;
+//        }
+//        double b=w*(1-c/100);
+//        System.out.printf("Оплата за детский сад %.2f", b);
+
+        //2
+//        double X = 0;
+//        System.out.print("Введите a=");
+//        double a = in.nextDouble();
+//        System.out.print("Введите b=");
+//        double b = in.nextDouble();
+//        if (a > b) {
+//            X = a/(b+1);
+//        } else if (a == b) {
+//            X = a + 25;
+//        } else if (a < b) {
+//            X = (a * b - 2) / a;
+//        }  if (a == 0) {
+//            System.out.println("Знаменатель в выражении (1) равен 0.");
+//            return;
+//        }
+//
+//        if (b == -1) {
+//            System.out.println("Знаменатель в выражении (3) равен 0.");
+//            return;
+//        }
+//        System.out.printf("X=%.2f",X);
+
+        //3
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//
+//        double S = sin(X);
+//        int k=3;
+//        do {
+//            S =S+sin(k*X) /pow(k,2) ;
+//            k=k+2;
+//        } while (k <= 9);
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        if(x<=0&&pow(x,2)+pow(y,2)<=36||x>=0&&y<=0&&pow(x,2)+pow(y,2)<=36){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+
+

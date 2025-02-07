@@ -1,0 +1,92 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Базовая цена:");
+//        double a=in.nextDouble();
+//        System.out.print("Количество продукции:");
+//        int m= in.nextInt();
+//        double c=0;
+//        if (m >300) {
+//            c = 0.10;
+//        } else if (m >100) {
+//            c = 0.05;
+//        }
+//        double b=m*a*(1-c);
+//        System.out.printf("Cтоимость продукции=%.2f", b);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x>7) {
+//            y1 =15+x*1.0;
+//        } else  if(x<=-7){ //спросите его про это
+//            y1 =abs(a)+9;
+//        }
+//
+//        if (x>2) {
+//            y2 = 3;
+//        } else {
+//            y2 = (abs(x)-5);
+//        }
+//        y = y1 / y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+        //3 если доебётся скажите что в 6 лабе он такой код написал
+//        System.out.print("n=");
+//        int n = in.nextInt();
+//
+//        double S = 1;
+//        double S1 = 0;
+//        double S2 = 0;
+//        for (int k = 1; k <= n; k++) {
+//            S1 = S1 + cos(k);
+//            S2 = S2 + sin(k);
+//            S = S * S1 / S2;
+//        }
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        System.out.print("r = ");
+//        double r = in.nextDouble();
+//
+//
+//        if(y>=r&&x<=0&&y>=pow(x,2)||y<=pow(x,2)&&pow(x,2)+pow(y,2)<=pow(r,2)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Cовокупный доход семьи :");
+//        double a= in.nextDouble();
+//        System.out.print("Количество человек в семье: ");
+//        int q = in.nextInt();
+//        System.out.print("Базовая ставка оплты  за детский сад: ");
+//        double w = in.nextDouble();
+//        double u=a/q;
+//
+//        double c=0;
+//        if (u<5000) {
+//            c = 50;
+//        } else if (u >= 5000 && u <= 7000) {
+//            c = 30;
+//        }
+//        double b=w*(1-c/100);
+//        System.out.printf("Оплата за детский сад %.2f", b);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x > a) {
+//            y1 = a + x;
+//        } else {
+//            y1 = 2 * a - x;
+//        }
+//
+//        if (x > 10) {
+//            y2 = a * x;
+//        } else {
+//            y2 = x;
+//        }
+//        y = y1 + y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+        //3
+//        System.out.print("n=");
+//        int n = in.nextInt();
+//
+//        double S = 23;
+//
+//        int k = 1;
+//
+//        do {
+//            if(k%2==1){
+//                S=S-(5*k-1)/(pow(2,k)*pow(3,k));
+//            }else{
+//                S=S+(5*k-1)/(pow(2,k)*pow(3,k));
+//            }
+//            k=k+1;
+//        } while (k <= n);
+//
+//
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        if(pow(x,2)+pow(y,2)>=1&&y<=2&&y>=-2&&x<=2&&x>=-2){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+        
+    }
+}
+
+
+
+
+
+

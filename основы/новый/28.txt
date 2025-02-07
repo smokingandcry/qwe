@@ -1,0 +1,86 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Дальность поездки:");
+//        double a= in.nextDouble();
+//        double c=0;
+//        if (a<10) {
+//            c = a*20;
+//        } else if (a >= 10 && a <= 100) {
+//            c = a*15;
+//        } else {
+//            c = a*10;
+//        }
+//        System.out.printf("Cтоимость доставки груза %.2f", c);
+
+        //2
+//        double y = 0;
+//        double y1 = 0;
+//        double y2 = 0;
+//
+//        System.out.print("Введите x: ");
+//        int x = in.nextInt();
+//        System.out.print("Введите a: ");
+//        int a = in.nextInt();
+//
+//        if (x>=2) {
+//            y1 =x-2;
+//        } else{
+//            y1 =8;
+//        }
+//
+//        if (x==0) {
+//            y2 = 4;
+//        } else {
+//            y2 = a-x;
+//        }
+//        y = y1 - y2;
+//
+//        System.out.printf("y = %.2f", y);
+
+        //3
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//
+//        double S = 0;
+//
+//        int k = 1;
+//
+//        while (k <= 5) {
+//            S=S+sin((k*2-1)*X/(k*2));
+//            k=k+1;
+//        }
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        System.out.print("r = ");
+//        double r = in.nextDouble();
+//
+//
+//        if(y>=r&&x<=0&&y>=pow(x,2)||y<=pow(x,2)&&pow(x,2)+pow(y,2)<=pow(r,2)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+

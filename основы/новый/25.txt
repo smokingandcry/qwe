@@ -1,0 +1,83 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //1
+//        System.out.print("Cтоимость покупки :");
+//        double a= in.nextDouble();
+//
+//
+//        double c=0;
+//        if (a >= 10000 && a <= 30000) {
+//            c = 5;
+//        } else if (a > 30000) {
+//            c = 10;
+//        }
+//        double b=a*(1-c/100);
+//        System.out.printf("Оплачиваемая сумма %.2f", b);
+
+        //2
+//        double X = 0;
+//        System.out.print("Введите a=");
+//        int a = in.nextInt();
+//        System.out.print("Введите b=");
+//        int b = in.nextInt();
+//        if (a == 0) {
+//            System.out.println("Знаменатель в выражении (3) равен 0.");
+//            return;
+//        }
+//
+//        if (b == -31) {
+//            System.out.println("Знаменатель в выражении (1) равен 0.");
+//            return;
+//        }
+//        if (a > b) {
+//            X = a*1.0/(b+31);
+//        } else if (a == b) {
+//            X =-25;
+//        } else if (a < b) {
+//            X = (a*5-1)/a*1.0;
+//        }
+//        System.out.printf("X=%.2f",X);
+
+        //3
+//        System.out.print("X=");
+//        int X = in.nextInt();
+//
+//        double S = 0;
+//
+//        int k = 1;
+//
+//        while (k <= 9) {
+//            S=S+(cos(k*X)/(2*k));
+//            k=k+2;
+//        }
+//
+//        System.out.printf("S=%.2f", S);
+
+        //4
+//        System.out.print("x = ");
+//        double x = in.nextDouble();
+//        System.out.print("y = ");
+//        double y = in.nextDouble();
+//        if((y<=7&&y>=-3&&x>=-6&&x<=-3)||(y>=2&&y<=7&&x>=-3&&x<=-1)){
+//            System.out.print("М принадлежит");
+//        }else{
+//            System.out.print("M не принадлежит");
+//        }
+
+    }
+}
+
+
+
+
+
+
