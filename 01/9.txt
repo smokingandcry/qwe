@@ -1,0 +1,156 @@
+package ru.jeez.yeah;
+
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+import static java.lang.Math.*;
+
+public class HelloApplication extends Application {
+    private Stage primaryStage;
+    private Scene scene1;
+    private Scene scene2;
+    private Scene scene3;
+
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        primaryStage = stage;
+        scene1 = createScene1();
+        scene2 = createScene2();
+        scene3 = createScene3();
+        primaryStage.setTitle("Bilet");
+        primaryStage.setScene(scene1);
+        primaryStage.show();
+
+
+    }
+
+    private Scene createScene1() {
+        Label title = new Label("Task 1");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField xF = new TextField();
+        TextField yF = new TextField();
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                double x = Double.parseDouble(xF.getText());
+                double y = Double.parseDouble(yF.getText());
+                if (y<5&&y>0&&x>0&&x<10) {
+                    result.setText("Да");
+                } else if (y<=5&&y>=0&&x>=0&&x<=10) {
+                    result.setText("На границе");
+                } else {
+                    result.setText("Нет");
+                }
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("x="), xF, new Label("y="), yF);
+        root1.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1, calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+
+    }
+
+    private Scene createScene2() {
+        Label title = new Label("Task 2");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField aF = new TextField();
+
+
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                double a = Double.parseDouble(aF.getText());
+                if(a<=0||a<2*PI){
+                    result.setText("Error");
+                }
+               double c=a*180/PI;
+                result.setText(String.format("в градусах c=%.2f",c ));
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("a="), aF);
+        root1.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1,  calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+    }
+
+    private Scene createScene3() {
+        Label title = new Label("Task 3");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField aF = new TextField();
+        TextField bF = new TextField();
+        TextField cF = new TextField();
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                int a = Integer.parseInt(aF.getText());
+                int b = Integer.parseInt(bF.getText());
+                int c = Integer.parseInt(cF.getText());
+                int d=a;
+                a=b;
+                b=c;
+                c=d;
+
+                result.setText("a="+a+" b="+b+" c="+c);
+
+
+
+
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("a="), aF,new Label("b="), bF,new Label("c="), cF);
+        root1.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1, calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+    }
+}
+
+

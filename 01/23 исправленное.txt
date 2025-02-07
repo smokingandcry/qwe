@@ -1,0 +1,157 @@
+package ru.jeez.yeah;
+
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+import static java.lang.Math.*;
+
+public class HelloApplication extends Application {
+    private Stage primaryStage;
+    private Scene scene1;
+    private Scene scene2;
+    private Scene scene3;
+
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        primaryStage = stage;
+        scene1 = createScene1();
+        scene2 = createScene2();
+        scene3 = createScene3();
+        primaryStage.setTitle("Bilet");
+        primaryStage.setScene(scene1);
+        primaryStage.show();
+
+
+    }
+
+    private Scene createScene1() {
+        Label title = new Label("Task 1");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField xF = new TextField();
+        TextField yF = new TextField();
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                double x = Double.parseDouble(xF.getText());
+                double y = Double.parseDouble(yF.getText());
+                if (y<0&&y>-100&&y<-(abs(x))) {
+                    result.setText("Да");
+                } else if (y<=0&&y>=-100&&y<=-(abs(x))) {
+                    result.setText("На границе");
+                } else {
+                    result.setText("Нет");
+                }
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("x="), xF, new Label("y="), yF);
+        root1.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1, calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+
+    }
+
+    private Scene createScene2() {
+        Label title = new Label("Task 2");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField v1F = new TextField();
+        TextField v2F = new TextField();
+        TextField sF = new TextField();
+        TextField tF = new TextField();
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                double v1 = Double.parseDouble(v1F.getText());
+                double v2 = Double.parseDouble(v2F.getText());
+                double s = Double.parseDouble(sF.getText());
+                double t = Double.parseDouble(tF.getText());
+                double S2=s-t*v1+v2;
+                result.setText(String.format("Расстояние через %.0fч S2=%.2f" ,t,S2));
+
+
+
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("v1="), v1F, new Label("v2="), v2F);
+        root1.setAlignment(Pos.CENTER);
+        HBox root4 = new HBox(10, new Label("s="), sF, new Label("t="), tF);
+        root4.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1,root4, calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+    }
+
+    private Scene createScene3() {
+        Label title = new Label("Task 3");
+        title.setStyle("-fx-font-size:20px; -fx-font-weight:bold;");
+        TextField xF = new TextField();
+
+        Button calc = new Button("Calculate");
+        Label result = new Label();
+        calc.setOnAction(event -> {
+            try {
+                double x = Double.parseDouble(xF.getText());
+                double y=0;
+                if((-PI/2)<x||x<PI/2){
+                    y=sqrt(abs((sin(x)+pow(tan(x),2))/3.5*cos(x)));
+                }else if(PI/2<x||x<PI){
+                    y=(cos(x/3))/(sin(x)+pow(tan(x),2));
+                }
+
+                result.setText(String.format("y=%.2f",y));
+            } catch (NumberFormatException e) {
+                result.setText("Error");
+            }
+        });
+        Button btn1 = new Button("1");
+        Button btn2 = new Button("2");
+        Button btn3 = new Button("3");
+        btn1.setOnAction(event -> primaryStage.setScene(scene1));
+        btn2.setOnAction(event -> primaryStage.setScene(scene2));
+        btn3.setOnAction(event -> primaryStage.setScene(scene3));
+        HBox root2 = new HBox(10, btn1, btn2, btn3);
+        root2.setAlignment(Pos.CENTER);
+        HBox root1 = new HBox(10, new Label("x="), xF);
+        root1.setAlignment(Pos.CENTER);
+        VBox root = new VBox(20, title, root1,  calc, result, root2);
+        root.setAlignment(Pos.CENTER);
+        root.setPadding(new Insets(20));
+        return new Scene(root, 600, 600);
+    }
+}
+
+
